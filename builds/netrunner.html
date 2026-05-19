@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyberpunk 2077 — Checklist Netrunner</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">V</span>
+        <span>Night City Build Tracker</span>
+      </a>
+      <nav class="nav-actions" aria-label="Navegação principal">
+        <a class="button" href="../index.html">Home</a>
+        <a class="button primary" href="./netrunner.html">Netrunner</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="kicker">Cyberpunk 2077 · Netrunner Checklist</div>
+      <h1>Build Netrunner</h1>
+      <p>
+        Checklist local para acompanhar atributos, perks, cyberwares, quickhacks e armas da build.
+        O progresso fica salvo automaticamente neste navegador usando <strong>localStorage</strong>.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="../index.html">Voltar para Home</a>
+      </div>
+    </section>
+
+    <section class="toolbar" aria-label="Ferramentas">
+      <label class="search-wrap" aria-label="Buscar item">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Buscar por item, categoria, tag ou observação..." autocomplete="off" />
+      </label>
+      <div class="actions">
+        <button id="togglePendingBtn" type="button">Mostrar pendentes</button>
+        <button id="exportBtn" type="button">Exportar progresso</button>
+        <label class="file-label" for="importInput">Importar</label>
+        <input id="importInput" type="file" accept="application/json" />
+        <button id="resetBtn" class="danger" type="button">Resetar</button>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Resumo de progresso">
+      <div class="stat"><strong id="totalDone">0/0</strong><span>Itens concluídos</span></div>
+      <div class="stat"><strong id="percentDone">0%</strong><span>Progresso total</span></div>
+      <div class="stat"><strong id="pendingCount">0</strong><span>Pendentes</span></div>
+      <div class="stat"><div class="progress" aria-label="Barra de progresso"><div id="progressBar"></div></div><span>Salvo automaticamente</span></div>
+    </section>
+
+    <section class="layout">
+      <aside class="sidebar">
+        <h2>Categorias</h2>
+        <div id="tabs" class="tabs"></div>
+      </aside>
+      <section id="content" class="content"></section>
+    </section>
+
+    <p class="footer">
+      Build baseada em checklist pessoal. Os dados ficam apenas neste navegador.
+    </p>
+  </main>
+
+  <script src="../assets/netrunner-data.js"></script>
+  <script src="../assets/build-tracker.js"></script>
+</body>
+</html>
