@@ -4,16 +4,28 @@ window.NETRUNNER_CATEGORIES = [
     title: "Prioridades por level",
     description: "Roteiro prático para montar a build Netrunner usando apenas o jogo base, até o level 50.",
     items: [
-      { id: "lvl-01-10-int-9", name: "Level 1–10: subir Inteligência até 9", tags: ["prioridade", "early game"], note: "Pegue Otimização, Olho no Céu e comece a abrir a árvore de Fila de Hacks." },
-      { id: "lvl-01-10-basic-hacks", name: "Level 1–10: usar quickhacks básicos", tags: ["quickhacks"], note: "Priorize Apagão de Memória, Curto-Circuito, Superaquecimento e Falha de Cyberware conforme aparecerem." },
-      { id: "lvl-10-20-int-15", name: "Level 10–20: subir Inteligência até 15", tags: ["prioridade"], note: "Foque em Fila de Hacks, Exploit Integrado e preparação para Overclock." },
-      { id: "lvl-10-20-tech-9", name: "Level 10–20: subir Habilidade Técnica até 9", tags: ["cyberware"], note: "Comece a melhorar capacidade de cyberware e sobrevivência." },
-      { id: "lvl-20-30-int-20", name: "Level 20–30: fechar Inteligência 20", tags: ["prioridade", "core"], note: "Desbloqueie Overclock, Aceleração da Fila, Maestria da Fila e Sinergia Inteligente." },
+      { id: "lvl-01-10-int-9", name: "Level 1–10: subir Inteligência até 9", tags: ["prioridade", "early game"], note: "Comece pela árvore de Inteligência. O objetivo é liberar os primeiros recursos de quickhack e reduzir custo de RAM." },
+      { id: "lvl-01-10-perks-int", name: "Level 1–10: perks de Inteligência", tags: ["perks", "prioridade"], note: "Pegue Otimização, Olho no Céu, Cifra de Desligamento Forçado, Aviso: Risco de Explosão e comece Fila de Hacks assim que liberar." },
+      { id: "lvl-01-10-basic-hacks", name: "Level 1–10: quickhacks básicos", tags: ["quickhacks"], note: "Priorize Apagão de Memória, Curto-Circuito, Superaquecimento, Falha de Cyberware, Reiniciar Óptica e Ping conforme aparecerem." },
+
+      { id: "lvl-10-20-int-15", name: "Level 10–20: subir Inteligência até 15", tags: ["prioridade"], note: "O objetivo desta faixa é deixar a fila de hacks consistente e preparar a build para Overclock." },
+      { id: "lvl-10-20-perks-int", name: "Level 10–20: perks de fila e RAM", tags: ["perks", "prioridade", "RAM"], note: "Pegue Fila de Hacks, Ciclo de Feedback, Reciclador de Dados, Exploit Integrado, Quebra-Gelo, Sobrecarga do Sistema e Especulação." },
+      { id: "lvl-10-20-tech-9", name: "Level 10–20: subir Habilidade Técnica até 9", tags: ["cyberware"], note: "Comece a melhorar capacidade de cyberware e sobrevivência para sustentar uploads mais agressivos." },
+      { id: "lvl-10-20-perks-tech", name: "Level 10–20: perks iniciais de Habilidade Técnica", tags: ["perks", "cyberware"], note: "Pegue Glutão de Guerra, Tudo que é Cibernético e Punk Renascentista." },
+
+      { id: "lvl-20-30-int-20", name: "Level 20–30: fechar Inteligência 20", tags: ["prioridade", "core"], note: "Esta é a maior virada da build: Overclock e os perks finais da fila passam a carregar o dano principal." },
+      { id: "lvl-20-30-perks-overclock", name: "Level 20–30: perks de Overclock e fila avançada", tags: ["perks", "prioridade", "core"], note: "Pegue Overclock, Surto de Energia, Corrida Contra a Mente, Sublimação, Aceleração da Fila, Fila Hack_Root, Priorização da Fila, Maestria da Fila e Transbordamento." },
+      { id: "lvl-20-30-perks-smart", name: "Level 20–30: perks de armas inteligentes", tags: ["perks", "armas inteligentes"], note: "Pegue Especialista em Aquisição, Sub-rotinas de Precisão, Sem Escapatória, Transferência de Mira Travada, Prisma de Mira, Velocidade Terminal e Sinergia Inteligente." },
       { id: "lvl-20-30-cyberdeck", name: "Level 20–30: trocar para cyberdeck melhor", tags: ["cyberdeck"], note: "Use o melhor cyberdeck disponível no seu nível; o Tetratronic Rippler é o alvo final." },
-      { id: "lvl-30-40-tech-15", name: "Level 30–40: subir Habilidade Técnica até 15", tags: ["prioridade", "cyberware"], note: "Pegue Tudo que é Cibernético e Licença para Cromar para sustentar mais cyberware." },
-      { id: "lvl-30-40-reflex-9", name: "Level 30–40: subir Reflexos até 9", tags: ["mobilidade"], note: "Pegue Arrancada para reposicionar durante Overclock." },
-      { id: "lvl-40-50-reflex-15", name: "Level 40–50: subir Reflexos até 15", tags: ["mobilidade"], note: "Pegue Arrancada Aérea e finalize a mobilidade da build." },
-      { id: "lvl-40-50-final-points", name: "Level 40–50: pontos finais em Constituição/Sangue-Frio", tags: ["ajuste final"], note: "Use os pontos restantes para sobrevivência, furtividade leve ou conforto no seu estilo de jogo." }
+
+      { id: "lvl-30-40-tech-15", name: "Level 30–40: subir Habilidade Técnica até 15", tags: ["prioridade", "cyberware"], note: "O objetivo é consolidar capacidade de cyberware, defesa e upgrades para jogar com mais segurança." },
+      { id: "lvl-30-40-perks-tech", name: "Level 30–40: perks avançados de cyberware", tags: ["perks", "prioridade", "cyberware"], note: "Pegue Atualização de Driver, Conhecedor de Chipware, Licença para Cromar e Garantia Estendida." },
+      { id: "lvl-30-40-reflex-9", name: "Level 30–40: subir Reflexos até 9", tags: ["mobilidade"], note: "Pegue mobilidade suficiente para reposicionar durante Overclock e sair de combate direto." },
+      { id: "lvl-30-40-perks-reflex", name: "Level 30–40: perks iniciais de Reflexos", tags: ["perks", "mobilidade"], note: "Pegue Escorregadio e Arrancada." },
+
+      { id: "lvl-40-50-reflex-15", name: "Level 40–50: subir Reflexos até 15", tags: ["mobilidade"], note: "Finalize a mobilidade da build para entrar, reposicionar e sair de ângulos ruins." },
+      { id: "lvl-40-50-perks-reflex", name: "Level 40–50: perks finais de Reflexos", tags: ["perks", "mobilidade"], note: "Pegue Arrancada Aérea. Depois use sobras para conforto em Constituição ou Sangue-Frio." },
+      { id: "lvl-40-50-final-points", name: "Level 40–50: pontos finais em Constituição/Sangue-Frio", tags: ["ajuste final"], note: "Com pontos sobrando, priorize sobrevivência básica. Se quiser mais utilidade, adicione perks opcionais como Hackeador de Carros, Copiar e Colar ou Contra-Hack." }
     ]
   },
   {
